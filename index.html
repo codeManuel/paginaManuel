@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portafolio de Manuel Miranda, frontend developer. Proyectos con React, CSS moderno y diseño centrado en el usuario.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tusitio.com/">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Google Fonts para un look moderno -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <!-- Para usar Lucide icons -->
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">JD<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="btn-contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section id="inicio" class="hero-content">
+            <p class="tagline">Hola, soy Manuel Miranda</p>
+            <h1>Frontend Developer enfocado en crear <p>experiencias digitales</p> excepcionales.</h1>
+            <p class="description">Especializado en React, CSS moderno y diseño centrado en el usuario.</p>
+            <div class="cta-group">
+                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                <a href="#blog" class="btn-secondary">Leer Blog</a>
+            </div>
+        </section>
+    </main>
+
+<!-- La seccion de proyectos --> -->
+<section id="proyectos" class="projects-section">
+    <div class="section-title">
+        <h2>Mis Proyectos</h2>
+        <p>Soluciones digitales con código limpio.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Tarjeta 1 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="shopping-cart"></i>
+            </div>
+            <div class="project-info">
+                <h3>E-commerce Moderno</h3>
+                <p>Aplicación de tienda con React y procesamiento de pagos.</p>
+                <div class="tags">
+                    <span>React</span>
+                    <span>Stripe</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div class="project-info">
+                <h3>Dashboard Analytics</h3>
+                <p>Visualización de datos complejos con gráficos interactivos.</p>
+                <div class="tags">
+                    <span>TypeScript</span>
+                    <span>D3.js</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="cloud-sun"></i>
+            </div>
+            <div class="project-info">
+                <h3>App de Climaa</h3>
+                <p>Interfaz minimalista consumiendo una API meteorológica.</p>
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+
+<!-- La seccion del blog -->
+<section id="blog" class="blog-section">
+    <div class="section-title">
+        <h2>Blog & Artículos</h2>
+        <p>Compartiendo lo que aprendo sobre el desarrollo web.</p>
+    </div>
+
+    <div class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="date">15 Mar, 2024</span>
+                <span class="read-time">5 min lectura</span>
+            </div>
+            <a href="#" class="post-title">
+                <h3>Por qué dejé de usar IDs en CSS y por qué tú también deberías</h3>
+            </a>
+            <p class="post-excerpt">Exploramos las ventajas de la especificidad basada en clases y metodologías como BEM para proyectos escalables.</p>
+            <div class="post-footer">
+                <a href="#" class="read-more">Leer artículo →</a>
+            </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="date">02 Mar, 2024</span>
+                <span class="read-time">8 min lectura</span>
+            </div>
+            <a href="#" class="post-title">
+                <h3>Guía definitiva de Flexbox en 2024</h3>
+            </a>
+            <p class="post-excerpt">Todo lo que necesitas saber para alinear elementos como un profesional sin morir en el intento.</p>
+            <div class="post-footer">
+                <a href="#" class="read-more">Leer artículo →</a>
+            </div>
+        </article>
+    </div>
+    
+    <div class="blog-cta">
+        <a href="#" class="btn-outline">Ver todas las publicaciones</a>
+    </div>
+</section>
+
+<!-- La seccion de contactame -->
+<section id="contacto" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Hablemos de tu próximo proyecto</h2>
+            <p>¿Tienes una idea o simplemente quieres saludar? Mi bandeja de entrada siempre está abierta.</p>
+            
+            <div class="contact-methods">
+                <div class="method">
+                    <i data-lucide="mail"></i>
+                    <span>ing.miranda2804@gmail.com</span>
+                </div>
+                <div class="method">
+                    <i data-lucide="map-pin"></i>
+                    <span>Falcon, Venezuela (Remoto)</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="github"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Implementando Formspree para que me lleguen los email  -->
+    <form id="my-form" action="https://formspree.io/f/xkoqkrbw" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="_replyto" id="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+        </div>
+        <button type="submit" id="submit-btn" class="btn-submit">Enviar Mensaje</button>
+
+        <!-- Mensaje de estado oculto por defecto -->
+        <p id="status" class="form-status"></p>
+    </form>
+
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>&copy; 2026 JD Developer. Construido con ❤️ y mucho código.</p>
+</footer>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  const form = document.getElementById("my-form");
+  const status = document.getElementById("status");
+  const btn = document.getElementById("submit-btn");
+  if (!form || !status || !btn) return;
+
+  async function handleSubmit(event) {
+    event.preventDefault(); // Evita que la página se recargue
+    const data = new FormData(event.target);
+    
+    btn.disabled = true;
+    btn.innerText = "Enviando...";
+
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "¡Gracias! Tu mensaje ha sido enviado con éxito.";
+        status.classList.remove("error");
+        status.classList.add("success");
+        form.reset(); // Limpia el formulario
+        setTimeout(() => {
+          status.innerHTML = "";
+          status.classList.remove("success");
+        }, 5000);
+      } else {
+        status.innerHTML = "Ups! Hubo un problema al enviar.";
+        status.classList.remove("success");
+        status.classList.add("error");
+      }
+      btn.disabled = false;
+      btn.innerText = "Enviar Mensaje";
+    }).catch(error => {
+      status.innerHTML = "Error de conexión. Inténtalo de nuevo.";
+      status.classList.remove("success");
+      status.classList.add("error");
+      btn.disabled = false;
+      btn.innerText = "Enviar Mensaje";
+    });
+  }
+
+  form.addEventListener("submit", handleSubmit);
+});
+</script>
+
+</body>
+
+</html>

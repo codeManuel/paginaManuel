@@ -1,0 +1,529 @@
+:root {
+    --bg-color: #ffffff;
+    --text-main: #1a1a1a;
+    --text-muted: #666666;
+    --accent-color: #2563eb; /* Azul profesional */
+    --secondary-bg: #f9fafb;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- Navegación --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    position: sticky; /* le coloque el valor de sticky en lugar de fixed para mantener el diseno visible */
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.btn-contact {
+    background: var(--text-main);
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-image: radial-gradient(circle at 2px 2px, #e5e7eb 1px, transparent 0);
+    background-size: 40px 40px; /* Fondo sutil de puntos */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.tagline {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+h1 span {
+    color: var(--text-muted);
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* --- Botones --- */
+.cta-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid #ddd;
+    color: var(--text-main);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    nav { display: none; } /* Idealmente aquí pondrías un menú hamburguesa */
+}
+
+
+
+/* --- Sección Proyectos --- */
+.projects-section {
+    padding: 100px 10%;
+    background-color: var(--secondary-bg);
+}
+
+.section-title {
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    color: var(--text-muted);
+}
+
+/* Grid de Tarjetas */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.project-image {
+    height: 200px;
+    background: #e2e8f0; /* Color temporal para la imagen */
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Etiquetas (Tags) */
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    font-size: 0.75rem;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.view-link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.view-link:hover {
+    text-decoration: underline;
+}
+
+
+.project-icon-wrapper {
+    height: 120px;
+    background: #f8fafc; /* Gris muy claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.project-icon-wrapper i {
+    width: 48px;
+    height: 48px;
+    stroke: var(--accent-color); /* El azul que definimos al inicio */
+    stroke-width: 1.5px;
+}
+
+/* Efecto al pasar el mouse por la tarjeta */
+.project-card:hover .project-icon-wrapper i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* --- Animación de los Iconos --- */
+
+/* 1. Definimos el estado inicial del icono */
+.project-icon-wrapper i {
+    width: 48px;
+    height: 48px;
+    stroke: var(--accent-color);
+    stroke-width: 1.5px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /*Efecto rebote suave */
+}
+
+/* 2. Animación al pasar el mouse por la TARJETA */
+.project-card:hover .project-icon-wrapper i {
+    transform: scale(1.2) rotate(-5deg); /* Crece y se inclina un poco */
+    stroke-width: 2px; /* Se vuelve un poco más grueso */
+    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.3)); /* Resplandor sutil azul */
+}
+
+/* 3. Un pequeño detalle: el contenedor también cambia de color */
+.project-card:hover .project-icon-wrapper {
+    background-color: #f0f7ff;  /*Un azul muy, muy tenue */
+    transition: background-color 0.4s ease;
+}
+
+/* ¿Cómo se ve esto en acción?
+Efecto "Pop": Gracias al cubic-bezier, el icono no crece de forma lineal, sino que tiene un pequeño efecto de rebote profesional.
+Inclinación: El rotate(-5deg) le quita la rigidez al diseño y lo hace sentir más dinámico.
+Glow: El drop-shadow hace que el icono parezca "encendido" */ 
+
+
+
+
+/* --- Sección Blog --- */
+.blog-section {
+    padding: 100px 10%;
+    background-color: var(--bg-color);
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px; /* Centramos el contenido para lectura */
+    margin: 0 auto;
+}
+
+.blog-post {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-title {
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.post-title h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.post-title:hover h3 {
+    color: var(--accent-color);
+}
+
+.post-excerpt {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+}
+
+.read-more {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    color: var(--accent-color);
+}
+
+.blog-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 2px solid var(--text-main);
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--text-main);
+    color: white;
+}
+
+
+/* --- Sección Contacto --- */
+.contact-section {
+    padding: 100px 10%;
+    background-color: var(--secondary-bg);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.contact-info p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.method i {
+    color: var(--accent-color);
+    width: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Formulario */
+.contact-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 3rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border-top: 1px solid #eee;
+}
+
+/* Responsive para Contacto */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* estilo para e mensaje de exito del envio del formulario de contacto, se muestra solo cuando hay una respuesta del servidor, ya sea de exito o error. Se le asignan clases adicionales para diferenciar entre ambos estados.*/
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none; /* Se muestra solo cuando hay respuesta */
+}
+
+.form-status.success {
+    display: block;
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.form-status.error {
+    display: block;
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
