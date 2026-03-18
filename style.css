@@ -1,3 +1,6 @@
+/* ========================================
+   VARIABLES CSS (Colores, Fuentes, etc.)
+   ======================================== */
 :root {
     --bg-color: #ffffff;
     --text-main: #1a1a1a;
@@ -7,6 +10,9 @@
     --font-family: 'Inter', sans-serif;
 }
 
+/* ========================================
+   RESET Y ESTILOS BASE
+   ======================================== */
 * {
     margin: 0;
     padding: 0;
