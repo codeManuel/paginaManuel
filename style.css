@@ -494,14 +494,23 @@ Glow: El drop-shadow hace que el icono parezca "encendido" */
     background: #1d4ed8;
 }
 
-/* Footer */
+/* Footer con tono oscuro profesional */
 .main-footer {
     text-align: center;
     padding: 3rem;
     font-size: 0.9rem;
-    color: var(--text-muted);
-    border-top: 1px solid #eee;
+    background-color: #121212; /* Gris casi negro, muy elegante */
+    color: #888;               /* Gris medio para el texto (menos brillante) */
+    border-top: 1px solid #2a2a2a; /* Línea divisoria oscura para que no resalte tanto como el #eee */
+    margin-top: 2rem;          /* Espacio extra arriba para separarlo del contenido */
 }
+
+/* Efecto opcional: resalta tu nombre en el footer */
+.main-footer span {
+    color: #ccc; 
+    font-weight: 500;
+}
+
 
 /* Responsive para Contacto */
 @media (max-width: 768px) {
