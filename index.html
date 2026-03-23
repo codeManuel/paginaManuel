@@ -3,131 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título realista para Junior: Nombre + Rol + Stack principal -->
-    <title>Manuel Miranda | Desarrollador Frontend Junior | React & JS</title>
+    <title>Dev Portfolio | Frontend Developer</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <!-- Favicon personalizado -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Portafolio de Manuel Miranda, Desarrollador Frontend Junior apasionado por React y el desarrollo web moderno. Mira mis proyectos personales y formación.">
+    <meta name="description" content="Portafolio de Manuel Miranda, frontend developer. Proyectos con React, CSS moderno y diseño centrado en el usuario.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://codemanuel.github.io">
+    <link rel="canonical" href="https://codemanuel.github.io/paginaManuel/">
     <meta name="theme-color" content="#1a1a1a">
 
-    <!-- Open Graph (Redes Sociales) -->
-    <meta property="og:title" content="Manuel Miranda | Desarrollador Frontend Junior">
-    <meta property="og:description" content="Construyendo soluciones web con React y JavaScript. Enfocado en el aprendizaje continuo.">
-    <meta property="og:url" content="https://codemanuel.github.io">
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Manuel Miranda - Frontend Developer">
+    <meta property="og:description" content="Portafolio de Manuel Miranda, especializado en React, CSS moderno y diseño centrado en el usuario.">
+    <meta property="og:url" content="https://codemanuel.github.io/paginaManuel/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://codemanuel.github.io/paginaManuel/preview.jpg"> <!-- Cambia por una imagen real si tienes -->
 
-    <!-- Schema.org (Datos Estructurados) -->
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Manuel Miranda - Frontend Developer">
+    <meta name="twitter:description" content="Portafolio de Manuel Miranda, especializado en React, CSS moderno y diseño centrado en el usuario.">
+    <meta name="twitter:image" content="https://codemanuel.github.io/paginaManuel/preview.jpg"> <!-- Cambia por una imagen real -->
+
+    <!-- Schema.org para datos estructurados -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Manuel Miranda",
-      "jobTitle": "Junior Frontend Developer",
-      "url": "https://codemanuel.github.io",
+      "jobTitle": "Frontend Developer",
+      "url": "https://codemanuel.github.io/paginaManuel/",
+      "sameAs": [
+        "https://github.com/codemanuel",
+        "https://linkedin.com/in/manuelmiranda",
+        "https://twitter.com/manuelmiranda"
+      ],
       "knowsAbout": ["React", "CSS", "JavaScript", "Frontend Development"],
-      "description": "Desarrollador Junior con bases sólidas en Frontend y gran capacidad de aprendizaje."
+      "description": "Frontend developer especializado en React, CSS moderno y diseño centrado en el usuario."
     }
     </script>
 
-    <script defer src="https://cdn.jsdelivr.net"></script>
+    <!-- Google Fonts para un look moderno -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <!-- Para usar Lucide icons -->
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
 </head>
 <body>
 
     <header class="navbar">
-        <div class="logo">MM<span>.</span></div>
-        <nav aria-label="Menú principal">
+        <div class="logo">JD<span>.</span></div>
+        <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto" class="btn-contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section: Enfoque honesto y proactivo -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <p class="tagline">Hola, soy Manuel Miranda</p>
-                <h1>Desarrollador Frontend Junior apasionado por <span>crear y aprender</span>.</h1>
-                <p class="description">
-                    Enfocado en dominar React y el desarrollo web moderno a través de proyectos prácticos y formación continua.
-                </p>
-                <div class="cta-group">
-                    <a href="#proyectos" class="btn-primary">Ver mis Proyectos</a>
-                    <a href="mailto:ing.miranda2804@gmail.com" class="btn-secondary">Contactar</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos (Asegúrate de enlazar tus repos de GitHub reales) -->
-        <section id="proyectos" class="projects-section">
-            <div class="section-title">
-                <h2>Proyectos Personales</h2>
-                <p>Aplicaciones que he construido para poner en práctica mis conocimientos.</p>
-            </div>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-icon-wrapper"><i data-lucide="shopping-cart"></i></div>
-                    <div class="project-info">
-                        <h3>E-commerce Moderno</h3>
-                        <p>Simulación de tienda con React, manejo de carrito y diseño responsivo.</p>
-                        <div class="tags"><span>React</span><span>CSS</span></div>
-                        <a href="#" class="view-link">Ver Código en GitHub →</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-icon-wrapper"><i data-lucide="cloud-sun"></i></div>
-                    <div class="project-info">
-                        <h3>App de Clima</h3>
-                        <p>Interfaz conectada a una API real para practicar el manejo de datos asíncronos.</p>
-                        <div class="tags"><span>JavaScript</span><span>API Fetch</span></div>
-                        <a href="#" class="view-link">Ver Demo →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section id="contacto" class="contact-section">
-            <div class="contact-container">
-                <h2>¿Buscas un perfil Junior con ganas de crecer?</h2>
-                <p>Estoy disponible para mi primera oportunidad profesional o colaboraciones en proyectos.</p>
-                
-                <div class="contact-methods">
-                    <div class="method">
-                        <i data-lucide="mail"></i>
-                        <a href="mailto:ing.miranda2804@gmail.com">ing.miranda2804@gmail.com</a>
-                    </div>
-                    <div class="method">
-                        <i data-lucide="map-pin"></i>
-                        <span>Falcón, Venezuela (Remoto/Híbrido)</span>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com" target="_blank" rel="noopener"><i data-lucide="github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
-                </div>
+    <main class="hero">
+        <section id="inicio" class="hero-content">
+            <p class="tagline">Hola, soy Manuel Miranda</p>
+            <h1>Frontend Developer enfocado en crear <p>experiencias digitales</p> excepcionales.</h1>
+            <p class="description">Especializado en React, CSS moderno y diseño centrado en el usuario.</p>
+            <div class="cta-group">
+                <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                <a href="#blog" class="btn-secondary">Leer Blog</a>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <p>&copy; 2024 Manuel Miranda. Desarrollado con dedicación.</p>
-    </footer>
+<!-- La seccion de proyectos --> -->
+<section id="proyectos" class="projects-section">
+    <div class="section-title">
+        <h2>Mis Proyectos</h2>
+        <p>Soluciones digitales con código limpio.</p>
+    </div>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <div class="projects-grid">
+        <!-- Tarjeta 1 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="shopping-cart"></i>
+            </div>
+            <div class="project-info">
+                <h3>E-commerce Moderno</h3>
+                <p>Aplicación de tienda con React y procesamiento de pagos.</p>
+                <div class="tags">
+                    <span>React</span>
+                    <span>Stripe</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div class="project-info">
+                <h3>Dashboard Analytics</h3>
+                <p>Visualización de datos complejos con gráficos interactivos.</p>
+                <div class="tags">
+                    <span>TypeScript</span>
+                    <span>D3.js</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="project-card">
+            <div class="project-icon-wrapper">
+                <i data-lucide="cloud-sun"></i>
+            </div>
+            <div class="project-info">
+                <h3>App de Climaa</h3>
+                <p>Interfaz minimalista consumiendo una API meteorológica.</p>
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+                <a href="#" class="view-link">Ver Proyecto →</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+
+<!-- La seccion del blog -->
+<section id="blog" class="blog-section">
+    <div class="section-title">
+        <h2>Blog & Artículos</h2>
+        <p>Compartiendo lo que aprendo sobre el desarrollo web.</p>
+    </div>
+
+    <div class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="date">15 Mar, 2024</span>
+                <span class="read-time">5 min lectura</span>
+            </div>
+            <a href="#" class="post-title">
+                <h3>Por qué dejé de usar IDs en CSS y por qué tú también deberías</h3>
+            </a>
+            <p class="post-excerpt">Exploramos las ventajas de la especificidad basada en clases y metodologías como BEM para proyectos escalables.</p>
+            <div class="post-footer">
+                <a href="#" class="read-more">Leer artículo →</a>
+            </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="blog-post">
+            <div class="post-meta">
+                <span class="date">02 Mar, 2024</span>
+                <span class="read-time">8 min lectura</span>
+            </div>
+            <a href="#" class="post-title">
+                <h3>Guía definitiva de Flexbox en 2024</h3>
+            </a>
+            <p class="post-excerpt">Todo lo que necesitas saber para alinear elementos como un profesional sin morir en el intento.</p>
+            <div class="post-footer">
+                <a href="#" class="read-more">Leer artículo →</a>
+            </div>
+        </article>
+    </div>
+    
+    <div class="blog-cta">
+        <a href="#" class="btn-outline">Ver todas las publicaciones</a>
+    </div>
+</section>
+
+<!-- La seccion de contactame -->
+<section id="contacto" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Hablemos de tu próximo proyecto</h2>
+            <p>¿Tienes una idea o simplemente quieres saludar? Mi bandeja de entrada siempre está abierta.</p>
+            
+            <div class="contact-methods">
+                <div class="method">
+                    <i data-lucide="mail"></i>
+                    <span>ing.miranda2804@gmail.com</span>
+                </div>
+                <div class="method">
+                    <i data-lucide="map-pin"></i>
+                    <span>Falcon, Venezuela (Remoto)</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="github"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Implementando Formspree para que me lleguen los email  -->
+    <form id="my-form" action="https://formspree.io/f/xkoqkrbw" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="_replyto" id="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+        </div>
+        <button type="submit" id="submit-btn" class="btn-submit">Enviar Mensaje</button>
+
+        <!-- Mensaje de estado oculto por defecto -->
+        <p id="status" class="form-status"></p>
+    </form>
+
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>&copy; 2026 JD Developer. Construido con ❤️ y mucho código.</p>
+</footer>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  const form = document.getElementById("my-form");
+  const status = document.getElementById("status");
+  const btn = document.getElementById("submit-btn");
+  if (!form || !status || !btn) return;
+
+  async function handleSubmit(event) {
+    event.preventDefault(); // Evita que la página se recargue
+    const data = new FormData(event.target);
+    
+    btn.disabled = true;
+    btn.innerText = "Enviando...";
+
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "¡Gracias! Tu mensaje ha sido enviado con éxito.";
+        status.classList.remove("error");
+        status.classList.add("success");
+        form.reset(); // Limpia el formulario
+        setTimeout(() => {
+          status.innerHTML = "";
+          status.classList.remove("success");
+        }, 5000);
+      } else {
+        status.innerHTML = "Ups! Hubo un problema al enviar.";
+        status.classList.remove("success");
+        status.classList.add("error");
+      }
+      btn.disabled = false;
+      btn.innerText = "Enviar Mensaje";
+    }).catch(error => {
+      status.innerHTML = "Error de conexión. Inténtalo de nuevo.";
+      status.classList.remove("success");
+      status.classList.add("error");
+      btn.disabled = false;
+      btn.innerText = "Enviar Mensaje";
+    });
+  }
+
+  form.addEventListener("submit", handleSubmit);
+});
+</script>
+
 </body>
+
 </html>
